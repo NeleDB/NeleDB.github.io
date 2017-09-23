@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+
+  WebFontConfig = {
+    custom: {
+      families: ['grandhotel'],
+      // urls: ['/assets/fonts/din/din.css']
+      urls: ['../assets/fonts/grandhotel/grandhotel.css']
+    }
+  };
+
+  (function(d) {
+  var wf = d.createElement('script'), s = d.scripts[0];
+  wf.async = true;
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+  s.parentNode.insertBefore(wf, s);
+  })(document);
+
+</script>
+<body>
+  <header class="page-header">
+    <a href="/"><h1 class="header-title white">nele.</h1></a>
+    <nav class="header-links">
+      <ul class="nav-list">
+        <a href="/#work"><li class="nav-list-title white">Work</li></a>
+        <a href="/#about"><li class="nav-list-title white">About</li></a>
+      </ul>
+      <ul class="link-list">
+        <a><li class="link-list-item"><img class="link-img" src="../assets/img/behance-white.svg" width="23px" height="15px" alt="behance"/></li></a>
+        <a><li class="link-list-item"><img class="link-img" src="../assets/img/vimeo-white.svg" width="18px" height="15px" alt="vimeo"/></li></a>
+        <a><li class="link-list-item"><img class="link-img" src="../assets/img/email-white.svg" width="18px" height="14px" alt="mail"/></li></a>
+      </ul>
+    </nav>
+    <div class="flex-next work-header">
+      <div class="work-header-text">
+        <h1 class="work-title">Meditea</h1>
+        <p class="work-category">Mobile app design</p>
+      </div>
+      <img class="work-img" src="../assets/img/meditea-header.png" width="754px" height="401px" alt="meditea"/>
+    </div>
+  </header>
+  <main>
+    <section>
+      <ul class="shortinfo">
+        <li>
+          <h2 class="shortinfo-title">Category</h2>
+          <p class="shortinfo-text">Motion graphic</p>
+        </li>
+        <li>
+          <h2 class="shortinfo-title">Deliverables</h2>
+          <p class="shortinfo-text">Explainer video</p>
+        </li>
+        <li>
+          <h2 class="shortinfo-title">Explore</h2>
+          <a class="shortinfo-link" href="https://vimeo.com/219191361">Click me!</a>
+        </li>
+      </ul>
+    </section>
+    <section class='section-container'>
+      <header class='section-header'>
+        <hr class='line'/>
+        <h1 class='section-title'>Brief</h1>
+      </header>
+    </section>
+  </main>
+
+</body>
+</html>
