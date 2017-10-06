@@ -18,6 +18,10 @@ body > header {
   font-size: 2.4rem;
 }
 
+.fa-white {
+  color: white;
+}
+
 .name {
   font-family: grandhotel;
   font-size: 2.8rem;
@@ -31,12 +35,11 @@ body > header {
 }
 
 .header-links {
-  display: flex;
-  justify-content: space-between;
+  @apply --flex-spaceBetween;
 }
 
 .page-header {
-  background-color: #282c41;
+  background-color: var(--dark-blue);
   color: white;
 }
 
@@ -49,28 +52,20 @@ body > header {
   position: relative;
 
   &::before {
-    display: block;
-    content: '';
+    @apply --background-elements;
     background-image: url(../assets/svg/background-header.svg);
     width: 47.6rem;
     height: 59.5rem;
-    position: absolute;
-    z-index: -30;
     top: -10rem;
     right: 0;
-    background-repeat: no-repeat;
   }
 
   &::after {
-    display: block;
-    content: '';
+    @apply --background-elements;
     background-image: url(../assets/svg/background-header2.svg);
     width: 20.7rem;
     height: 38.2rem;
-    position: absolute;
     top: 10rem;
-    z-index: -30;
-    background-repeat: no-repeat;
   }
 }
 
@@ -120,28 +115,20 @@ body > header {
   position: relative;
 
   &::before {
-    display: block;
-    content: '';
+    @apply --background-elements;
     background-image: url(../assets/svg/background-work.svg);
     width: 45.1rem;
     height: 68.3rem;
-    position: absolute;
-    z-index: -30;
     top: 10%;
-    background-repeat: no-repeat;
   }
 
   &::after {
-    display: block;
-    content: '';
+    @apply --background-elements;
     background-image: url(../assets/svg/background-work2.svg);
     height: 54.7rem;
     width: 40rem;
-    position: absolute;
     top: 50%;
-    z-index: -30;
     right: 0;
-    background-repeat: no-repeat;
   }
 }
 
@@ -149,28 +136,21 @@ body > header {
   position: relative;
 
   &::before {
-    display: block;
-    content: '';
+    @apply --background-elements;
     background-image: url(../assets/svg/background-work.svg);
     width: 45.1rem;
     height: 68.3rem;
-    position: absolute;
-    z-index: -30;
     top: 50%;
-    background-repeat: no-repeat;
   }
 
   &::after {
-    display: block;
-    content: '';
+    @apply --background-elements;
     background-image: url(../assets/svg/background-work2.svg);
     height: 54.7rem;
     width: 40rem;
-    position: absolute;
     top: 10%;
     z-index: -30;
     right: 0;
-    background-repeat: no-repeat;
   }
 }
 
@@ -179,8 +159,7 @@ body > header {
 }
 
 .section-header {
-  display: flex;
-  align-items: center;
+  @apply --flex-center;
   margin: 0 0 2rem;
 }
 
@@ -217,7 +196,7 @@ body > header {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #282c41;
+  background-color: var(--dark-blue);
   color: white;
   padding: 2rem;
 
@@ -228,7 +207,7 @@ body > header {
   }
 
   &-client {
-    color: #d0d0d0;
+    color: var(--light-grey);
     margin-top: 1rem;
   }
 
@@ -236,7 +215,7 @@ body > header {
     position: absolute;
     top: 40%;
     font-size: 1.8rem;
-    color: #d0d0d0;
+    color: var(--light-grey);
     line-height: 2.4rem;
   }
 
@@ -248,9 +227,7 @@ body > header {
     color: white;
     padding: .5rem;
 
-    &:hover {
-      text-decoration: underline;
-    }
+    @apply --hover;
   }
 }
 
@@ -291,32 +268,26 @@ body > header {
   }
 
   &-link {
-    color: #282c41;
+    color: var(--dark-blue);
     margin: 1rem;
 
-    &:hover {
-      transition: .5s ease;
-      text-decoration: underline;
-      cursor: pointer;
-    }
+    @apply --hover;
   }
 }
 
 .links-url {
   font-size: 1.4rem;
-  color: #ff6663;
+  color: var(--pinkred);
   margin-top: 2rem;
 
-  &:hover {
-    text-decoration: underline;
-  }
+  @apply --hover;
 }
 
 .mail-link {
   text-decoration: underline;
 
   &:hover {
-    color: #ff6663;
+    color: var(--pinkred);
   }
 }
 
@@ -358,7 +329,7 @@ body > header {
 }
 
 .work-category {
-  color: #d0d0d0;
+  color: var(--light-grey);
   line-height: 3rem;
 }
 
@@ -369,9 +340,8 @@ body > header {
 }
 
 .flex-column {
-  display: flex;
+  @apply --flex-spaceBetween;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .detail-design {
@@ -396,8 +366,8 @@ body > header {
   margin: 0 auto 5rem;
   justify-content: space-between;
 
-  &-link:hover {
-    text-decoration: underline;
+  &-link {
+    @apply --hover;
   }
 }
 
@@ -408,9 +378,8 @@ body > header {
 @media (width <= 1380px) {
 
   .work-container {
-    flex-direction: column;
+    @apply --column-center;
     width: 70vw;
-    align-items: center;
   }
 
   .paranormalia-work {
@@ -505,8 +474,7 @@ body > header {
   }
 
   .work-container .flex-next {
-    flex-direction: column;
-    align-items: center;
+    @apply --column-center;
   }
 
   .detail-img {
@@ -536,11 +504,11 @@ body > header {
   .shortinfo {
     margin: 0;
     background-image: none;
-    background-color: #ff6663;
-    display: flex;
+    background-color: var(--pinkred);
+
+    @apply --flex-center;
     width: 100vw;
     justify-content: space-around;
-    align-items: center;
     padding: 2rem;
     height: auto;
 
@@ -550,8 +518,7 @@ body > header {
   }
 
   .work-header {
-    flex-direction: column;
-    justify-content: center;
+    @apply --column-justify-center;
     margin: 0;
 
     &-img {
@@ -612,8 +579,7 @@ body > header {
   }
 
   .shortinfo {
-    flex-direction: column;
-    justify-content: center;
+    @apply --column-justify-center;
     align-items: flex-start;
     margin-bottom: 2rem;
   }
