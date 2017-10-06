@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Portfolio Nele De Bruycker" />
-    <meta name="keywords" content="Portfolio, Nele De Bruycker, Nele, Deviner, Web design, development, UI, UX" />
-    <title>Nele | Portfolio</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon.ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon.ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon.ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon.ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon.ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon.ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon.ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon.ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/favicon.ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
+  <meta charset="UTF-8">
+  <title>Nele De Bruycker</title>
+  <meta name="description" content="Portfolio Nele De Bruycker" />
+  <meta name="keywords" content="Portfolio, Nele De Bruycker, Nele, Deviner, Web design, development, UI, UX" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon.ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon.ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon.ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon.ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon.ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon.ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/favicon.ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <script>
-
     WebFontConfig = {
       custom: {
         families: ['grandhotel'],
         // urls: ['/assets/fonts/din/din.css']
-        urls: ['../assets/fonts/grandhotel/grandhotel.css']
+        urls: ['assets/fonts/grandhotel/grandhotel.css']
       }
     };
-
     (function(d) {
     var wf = d.createElement('script'), s = d.scripts[0];
     wf.async = true;
     wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
     s.parentNode.insertBefore(wf, s);
     })(document);
-
   </script>
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107571163-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-107571163-1');
-  </script>
-
 
 </head>
 
 <body>
 
   <header>
-    <h1 class="header-title">nele.</h1>
-    <nav class="header-links">
+    <a href="/"><h1 class="header-title">nele.</h1></a>
+    <nav class="header-links index-header">
       <ul class="nav-list">
-        <li class="nav-list-title">Work</li>
-        <li class="nav-list-title">About</li>
+        <a href="/#work"><li class="nav-list-title">Work</li></a>
+        <a href="/#about"><li class="nav-list-title">About</li></a>
       </ul>
       <ul class="link-list">
-        <li class="link-list-item"><a><img class="link-img" src="assets/svg/behance.svg" width="23px" height="15px" alt="behance"/></a></li>
-        <li class="link-list-item"><a><img class="link-img" src="assets/svg/vimeo.svg" width="18px" height="15px" alt="vimeo"/></a></li>
-        <li class="link-list-item"><a><img class="link-img" src="assets/svg/mail.svg" width="18px" height="14px" alt="mail"/></a></li>
+        <a href="https://www.behance.net/neledebruyb3d8" target="blank"><li class="link-list-item"><img class="link-img" src="assets/svg/behance.svg" width="23px" height="15px" alt="behance"/></li></a>
+        <a href="https://vimeo.com/neledebruycker" target="blank"><li class="link-list-item"><img class="link-img" src="assets/svg/vimeo.svg" width="18px" height="15px" alt="vimeo"/></li></a>
+        <a href="mailto:debruyckernele@gmail.com"><li class="link-list-item"><img class="link-img" src="assets/svg/mail.svg" width="18px" height="14px" alt="mail"/></li></a>
+      </ul>
     </nav>
     <div class="intro">
       <h1 class="intro-title">hello</h1>
       <p class="intro-text">I'm Nele, student web design and development </br>
         who is currently searching for an internship. </br>
-        <a class="intro-link">Want to know more?</a></p>
+        <a class="intro-link" href="#about">Want to know more?</a></p>
     </div>
   </header>
   <main class='main-container'>
-    <section>
+    <section class='section-container' id="work">
       <header class='section-header'>
         <hr class='line'/>
         <h1 class='section-title'>Work</h1>
@@ -85,27 +74,78 @@
       <div class="flex-next work-container">
         <div>
           <div class="flex-next">
-            <article class="work-item">
+            <div class="work-item">
               <img class="work-img" src="assets/img/work-fjallraven.jpg" width="360px" height="530px" alt="fjallraven" title="fjallraven"/>
-            </article>
-            <article class="work-item">
+              <a href="pages/fjallraven.html" class="overlay">
+                <h2 class="overlay-title">Fjällräven</h2>
+                <p class="overlay-client">School project</p>
+                <p class="overlay-explain">Product website design about 3 backpacks from Fjällräven.</p>
+                <p class="overlay-link">View case</p>
+              </a>
+            </div>
+            <div class="work-item">
               <img class="work-img" src="assets/img/work-meditea.jpg" width="360px" height="530px" alt="meditea" title="meditea"/>
-            </article>
+              <a href="pages/meditea.html" class="overlay">
+                <h2 class="overlay-title">Meditea</h2>
+                <p class="overlay-client">School project</p>
+                <p class="overlay-explain">App design about plants, tea and meditation.</p>
+                <p class="overlay-link">View case</p>
+              </a>
+            </div>
           </div>
-          <article class="work-item">
-            <img class="work-img" src="assets/img/work-coglass.jpg" width="753px" height="423px" alt="meditea" title="coglass"/>
-          </article>
+          <div class="work-item">
+            <img class="work-img" src="assets/img/work-coglass.jpg" width="753px" height="423px" alt="coglass" title="coglass"/>
+            <a href="pages/coglass.html" class="overlay">
+              <h2 class="overlay-title">CoGlass</h2>
+              <p class="overlay-client">School project</p>
+              <p class="overlay-explain">Motion explainer video about a kickstarter project.</p>
+              <p class="overlay-link">View case</p>
+            </a>
+          </div>
         </div>
-        <article class="work-item">
-          <img class="work-img" src="assets/img/work-paranormalia.jpg" width="362px" height="973px" alt="meditea" title="paranormalia"/>
-        </article>
+        <div class="work-item">
+          <img class="work-img paranormalia-work" src="assets/img/work-paranormalia.jpg" width="362px" height="977px" alt="paranormalia" title="paranormalia"/>
+          <a href="pages/paranormalia.html" class="overlay">
+            <h2 class="overlay-title">Paranormalia</h2>
+            <p class="overlay-client">School project</p>
+            <p class="overlay-explain">Website about an alternative <br/> truck festival.(design/development)</p>
+            <p class="overlay-link">View case</p>
+          </a>
+        </div>
       </div>
     </section>
-    <section>
+    <section class='section-container about-section' id="about">
       <header class='section-header'>
         <hr class='line' />
         <h1 class='section-title'>About</h1>
       </header>
+      <div class="about-container">
+        <p class='about-text'> <span class='emoji'>🙋</span> I'm <span class='name'>nele</span>, a student devine, currently in my last year. Throughout the years in college, I've learned a lot! <br/>I had no knowledge about digital design or development when I started Devine but that changed quickly. <br/>Learning many different things from motion graphics to UI/UX till programming games, gave me a very open mind. <br/>I like to get a little taste of everything! In my spare time, I will probably going for a swim (I love to be the first one in the water and brake the flat water surface).<br/><br/>
+        If you have a question or want to collab, just <a class="mail-link" href="mailto:debruycker.nele@gmail.com">send me an email!</a> <span class='emoji'>🖌</span> </p>
+        <ul class="flex-next about-links">
+          <li>
+            <h2 class="links-title">Name</h2>
+            <p>Nele De Bruycker</p>
+          </li>
+          <li>
+            <h2 class="links-title">Contact</h2>
+            <p>
+              <a class="links-url" href="tel:0032470635219">+32 470 64 52 19</a><br/>
+              <a class="links-url" href="mailto:debruycker.nele@gmail.com">debruycker.nele@gmail.com</a>
+            </p>
+          </li>
+          <li>
+            <h2 class="links-title">Links</h2>
+            <ul>
+              <li><a class="links-url" href="https://www.behance.net/neledebruyb3d8" target="blank">Behance</a></li>
+              <li><a class="links-url" href="https://vimeo.com/neledebruycker" target="blank">Vimeo</a><li/>
+              <li><a class="links-url" href="https://www.pinterest.com/nele_debruycker/" target="blank">Pinterest</a></li>
+              <li><a class="links-url" href="https://github.com/NeleDB" target="blank">Github</a></li>
+            </p>
+          </li>
+        </ul>
+      </div>
+
     </section>
   </main>
 
