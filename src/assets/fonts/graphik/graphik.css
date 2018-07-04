@@ -1,0 +1,21 @@
+@font-face {
+  font-family: graphikRegular;
+  src: url(graphik-regular.woff2) format('woff2'), url(graphik-regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: graphikMedium;
+  src: url(graphik-medium.woff2) format('woff2'), url(graphik-medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: graphikSemibold;
+  src: url(graphik-semibold.woff2) format('woff2'), url(graphik-semibold.woff) format('woff');
+}
+
+@font-face {
+  font-family: graphikBold;
+  src: url(graphik-bold.woff2) format('woff2'), url(graphik-bold.woff) format('woff');
+}
