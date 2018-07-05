@@ -331,6 +331,7 @@ footer {
 
 .about__text {
   width: calc(86vw / 7 * 5);
+  margin-top: 8rem;
 
   @media (width <= 880px) {
     width: 86vw;
@@ -342,5 +343,5 @@ footer {
 }
 
 .about__info {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
