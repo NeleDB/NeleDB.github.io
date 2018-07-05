@@ -15,6 +15,7 @@
   }
 
   --hover--line: {
+    position: relative;
 
     &:hover {
       cursor: pointer;
